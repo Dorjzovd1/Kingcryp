@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <title>Криптографын Шифр</title>
+
+  <style>
+    /* Арын зураг нэмэх */
+    body {
+      background-image: url('zurag/d.png'); /* Зурган файлын URL-ийг энд оруулна */
+      background-size: cover; /* Зургийг дэлгэцэнд тохируулах */
+      background-position: center; /* Зургийг төвд байрлуулах */
+      background-attachment: fixed; /* Зургийг хуудас гүйлгэх үед хөдөлгөөнгүй байлгах */
+    }
+
+    /* Бусад CSS тохиргоонууд */
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .flex-item-left, .flex-item-right {
+      width: 45%;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8); /* Дэвсгэрийг бага зэрэг тунгалаг болгож, текстийг тод харагдуулах */
+      border-radius: 10px;
+    }
+
+    .mybutton {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .mybutton:hover {
+      background-color: #45a049;
+    }
+    
+    p.text-align, p.text-align1 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="flex-container">
+    <div data-aos="slide-right" class="flex-item-left">
+      Шифр
+      <p class="text-align">Шифрлэх буюу кодлох гэдэг нь мэдээллийг шифр эсвэл код болгон хувиргах явдал юм. Нийтлэг хэллэгээр "шифр" нь "код" гэсэн утгатай ижил утгатай бөгөөд эдгээр нь мессежийг шифрлэх алхамуудын багц юм; Гэсэн хэдий ч, ойлголтууд нь криптограф, ялангуяа сонгодог криптографид ялгаатай байдаг.
+    </div>
+    <div class="flex-item">
+      <button data-aos="zoom-in-up" data-aos-delay="800" class="mybutton" onclick="location.href='cipher.html'" type="button">Шифрлэлтийг эхлүүлэх</button>
+    </div>
+    <div data-aos="slide-left" class="flex-item-right">
+      МЭДЭЭЛЭЛЭЭ 17 ӨӨР АРГААР шифрлээрэй!!!!
+      <p class="text-align1">1. Шифрийг сонгоно уу </p>
+      <p class="text-align1">2. Нууцлах текст оруулна уу</p>
+      <p class="text-align1">3. Шифрлэх дээр дарна уу</p>
+      <p class="text-align1">4. Шифрлэсэн текст бэлэн болно</p>
+      <p class="text-align1">5. Шифрлэсэн текстийг хөрвүүлэхийг хүсвэл текстээ оруулаад шифрийг тайлах дээр дарна уу</p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./js/index.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    })
+  </script>
+  
+</body>
+</html>
